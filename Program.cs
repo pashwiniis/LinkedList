@@ -26,7 +26,7 @@ namespace LinkedList
             //insert the 40 new node to the given linked list
             list2.InsertAtParticularPosition(2, 40);
             list2.InsertAtParticularPosition(3, 30);
-           
+
             list2.Display();
 
             //Appends the Nodes

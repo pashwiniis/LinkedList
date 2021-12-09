@@ -92,6 +92,7 @@
             newNode.next = null;
             return head;
         }
+        
 
         internal Nodes Search(int value)
         {
@@ -105,6 +106,8 @@
             }
             return null;
         }
+
+        
         internal void Display()
         {
             Nodes temp = this.head;
@@ -121,7 +124,9 @@
             Console.WriteLine("\n");
         }
 
-       
+        
+
+
 
     }
 }
