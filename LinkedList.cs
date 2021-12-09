@@ -54,5 +54,36 @@
             Console.WriteLine("\n");
         }
 
+        internal Nodes InsertAtParticularPosition(int position, int data)
+        {
+            if (position < 1)
+                Console.WriteLine("Invalid position");
+            if (position == 1)
+            {
+                var newNode = new Nodes(data);
+                newNode.next = this.head;
+                head = newNode;
+            }
+            else
+            {
+                Nodes temp = this.head;
+                while (position-- != 0) //
+                {
+
+                    if (position == 1)
+                    {
+                        Nodes node = new Nodes(data);
+                        node.next = this.head.next;
+                        head.next = node;
+                        break;
+                    }
+                    temp = temp.next;//1000
+                }
+                if (position != 1)
+                    Console.WriteLine("Position out of range");
+            }
+            return head;
+        }
+
     }
 }
