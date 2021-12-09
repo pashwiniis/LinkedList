@@ -67,6 +67,18 @@ namespace LinkedList
             list6.Search(30);
             list6.Display();
 
+            //Create a sorted linked list in ascending order
+            Console.WriteLine("create a sorted linked list in acsending order");
+            LinkedListclass list7 = new LinkedListclass();
+            list7.Add(56);
+            list7.Add(30);
+            list7.Add(40);
+            list7.Add(70);
+            Console.WriteLine("Before Sorting ");
+            list7.Display();
+            Console.WriteLine("After Sorting");
+            list7.sortList();
+            list7.Display();
             Console.ReadKey();
         }
     }
