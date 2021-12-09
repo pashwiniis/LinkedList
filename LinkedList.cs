@@ -38,21 +38,6 @@
             }
             Console.WriteLine("{0} inserted into the Append linked list", node.data);
         }
-        internal void Display()
-        {
-            Nodes temp = this.head;
-            if (temp == null)
-            {
-                Console.WriteLine("\nLinked list is empty");
-                return;
-            }
-            while (temp != null)
-            {
-                Console.Write(temp.data + " ");
-                temp = temp.next; //temp=null
-            }
-            Console.WriteLine("\n");
-        }
 
         internal Nodes InsertAtParticularPosition(int position, int data)
         {
@@ -84,6 +69,31 @@
             }
             return head;
         }
+
+        internal Nodes RemoveFirstNode()
+        {
+            if (this.head == null)
+                return null;
+            this.head = this.head.next;
+            return this.head;
+        }
+        internal void Display()
+        {
+            Nodes temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("\nLinked list is empty");
+                return;
+            }
+            while (temp != null)
+            {
+                Console.Write(temp.data + " ");
+                temp = temp.next; //temp=null
+            }
+            Console.WriteLine("\n");
+        }
+
+       
 
     }
 }
