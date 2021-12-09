@@ -23,9 +23,15 @@ namespace LinkedList
             LinkedListclass list2 = new LinkedListclass();
             list2.Add(56);
             list2.Add(70);
-            list2.InsertAtParticularPosition(2, 30);
+            //insert the 40 new node to the given linked list
+            list2.InsertAtParticularPosition(2, 40);
+            list2.InsertAtParticularPosition(3, 30);
+          
             list2.Display();
-
+            Console.WriteLine("Successfully inserted the new node ");
+            list2.RemoveNodeAtParticularPosition(2);
+            list2.Display();
+            Console.WriteLine("After deleting the Node Linked List size is  "+ list2.LinkedListSize());
             //Appends the Nodes
             Console.WriteLine("The node 50 is first cretated then appends 30 and 70");
             LinkedListclass list3 = new LinkedListclass();
