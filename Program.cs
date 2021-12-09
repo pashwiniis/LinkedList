@@ -10,21 +10,47 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to Linked List program");
+            Console.WriteLine("Adding the elements in the linked list");
             LinkedListclass list1 = new LinkedListclass();
             list1.Add(56);
-           // list1.Add(30);
+            list1.Add(30);
             list1.Add(70);
-            list1.InsertAtParticularPosition(2,30);
-            list1.Display();
+           list1.Display();
+
+            //INsert at particular position
+            Console.WriteLine("Insert the node at partucular Positon");
             LinkedListclass list2 = new LinkedListclass();
-            //Appends the Nodes
-            list2.AddFirst(56);
-            list2.AddFirst(30);
-            list2.AddFirst(70);
-            //Remove first node 50 from the linked list
-            list2.RemoveFirstNode();
+            list2.Add(56);
+            list2.Add(70);
+            list2.InsertAtParticularPosition(2, 30);
             list2.Display();
+
+            //Appends the Nodes
+            Console.WriteLine("The node 50 is first cretated then appends 30 and 70");
+            LinkedListclass list3 = new LinkedListclass();
+            list3.AddFirst(56);
+            list3.AddFirst(30);
+            list3.AddFirst(70);
+            list3.Display();
+
+            //Remove first node 50 from the linked list
+            Console.WriteLine("Removed the first node from the linked list");
+            LinkedListclass list4 = new LinkedListclass();
+            list4.Add(56);
+            list4.Add(30);
+            list4.Add(70);
+            list4.RemoveFirstNode();
+            list4.Display();
+
+            //Removed Last Node 70 from the linked list
+            Console.WriteLine("Removed the last node from the linked list");
+            LinkedListclass list5 = new LinkedListclass();
+            list5.Add(56);
+            list5.Add(30);
+            list5.Add(70);
+            list5.RemovaLastNode();
+            list5.Display();
             Console.ReadKey();
         }
     }
