@@ -51,6 +51,16 @@ namespace LinkedList
             list5.Add(70);
             list5.RemovaLastNode();
             list5.Display();
+
+            //Search Node 30 from the given liked list
+            Console.WriteLine("Searching the Nodes");
+            LinkedListclass list6 = new LinkedListclass();
+            list6.Add(56);
+            list6.Add(30);
+            list6.Add(70);
+            list6.Search(30);
+            list6.Display();
+
             Console.ReadKey();
         }
     }
