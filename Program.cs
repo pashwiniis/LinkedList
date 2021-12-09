@@ -22,6 +22,8 @@ namespace LinkedList
             list2.AddFirst(56);
             list2.AddFirst(30);
             list2.AddFirst(70);
+            //Remove first node 50 from the linked list
+            list2.RemoveFirstNode();
             list2.Display();
             Console.ReadKey();
         }
