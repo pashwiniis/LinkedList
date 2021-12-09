@@ -11,11 +11,17 @@ namespace LinkedList
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            LinkedListclass list = new LinkedListclass();
-            list.Add(56);
-            list.Add(30);
-            list.Add(70);
-            list.Display();
+            LinkedListclass list1 = new LinkedListclass();
+            list1.Add(56);
+            list1.Add(30);
+            list1.Add(70);
+            list1.Display();
+            LinkedListclass list2 = new LinkedListclass();
+            //Appends the Nodes
+            list2.AddFirst(56);
+            list2.AddFirst(30);
+            list2.AddFirst(70);
+            list2.Display();
             Console.ReadKey();
         }
     }
